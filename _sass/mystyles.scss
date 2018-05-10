@@ -1,0 +1,15 @@
+
+
+@import "vendor/bulma/utilities/initial-variables";
+@import "vendor/bulma/utilities/functions";
+
+
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
+
+// Use the new serif family
+$family-primary: $family-serif;
+
+$table-striped-row-even-background-color: #EBEBEB;
+
+@import "vendor/bulma"
