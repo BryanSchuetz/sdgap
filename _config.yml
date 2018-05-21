@@ -22,7 +22,7 @@ defaults:
     Reference-Number: 
     Title: 
     Posted-Date: 
-    Deadline: 
+    Deadline-Date: 
 date: 2016-10-02 17:11:00.000000000 Z
 url: sdgap-procurement.org
 permalink: "/:title.html"
