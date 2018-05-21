@@ -16,8 +16,9 @@
       </p>
       
       {{ content }}
-
+      {% if page.title == 'SDGAP Procurement' %}
       {% include procurements-table.html %}
+      {% endif %}
     
     </div>
   </section>

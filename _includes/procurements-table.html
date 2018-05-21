@@ -7,8 +7,7 @@
         <th>Type</th>
         <th>Title</th>
         <th>Reference Number</th>
-        <th>Posted</th>
-        <th>Deadline</th>
+        <th>Deadline (local time)</th>
         <th>Download</th>
       </tr>
     </thead>
@@ -17,19 +16,18 @@
         <th>Type</th>
         <th>Title</th>
         <th>Reference Number</th>
-        <th>Posted</th>
-        <th>Deadline</th>
+        <th>Deadline (local time)</th>
         <th>Download</th>
       </tr>
     </tfoot>
     <tbody>
-      {% for notice in site.notices %}
+      {% assign sorted_notices = site.notices | sort:"Posted-Date" | reverse %}
+      {% for notice in sorted_notices %}
         <tr>
           <td>{{ notice.Type }}</td>
-          <td>{{ notice.Title }}</td>
+          <td>{{ notice.title }}</td>
           <td>{{ notice.Reference-Number }}</td>
-          <td>{{ notice.Posted-Date }}</td>
-          <td>{{ notice.Deadline }}</td>
+          <td>{{ notice.Deadline-Date | date:"%Y-%m-%d %H:%M"}}</td>
           <td class="download"><a class="button is-primary" href="{{ notice.File }}"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
         </tr>
       {% endfor %}
