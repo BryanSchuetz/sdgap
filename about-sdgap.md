@@ -1,7 +1,8 @@
 ---
+title: About SDGAP
 layout: default
-title: About SDGAP 
 ---
+
 # About SDGAP
 {: .is-size-4 .has-text-weight-bold}
 
