@@ -5,6 +5,9 @@ collections:
   notices:
     title: Notices
     output: true
+  posts:
+    title: Posts
+    output: true
   uploads:
     title: Uploads
     output: true
@@ -15,11 +18,11 @@ defaults:
   values:
     Layout: default
     File: ''
-    Type: 'RFP'
-    Reference-Number:
-    Title:
-    Posted-Date:
-    Deadline:
+    Type: RFP
+    Reference-Number: 
+    Title: 
+    Posted-Date: 
+    Deadline: 
 date: 2016-10-02 17:11:00.000000000 Z
 url: sdgap-procurement.org
 permalink: "/:title.html"
@@ -37,7 +40,8 @@ exclude:
 - browser-sync.js
 - ".jekyll-metadata"
 - node_modules
-description: A simple, open, and transparent collection of procurements from the Sri Lanka Strengthening Democratic Governance and Accountability Project.
+description: A simple, open, and transparent collection of procurements from the Sri
+  Lanka Strengthening Democratic Governance and Accountability Project.
 destination: "./build"
 sass:
   style: compressed
