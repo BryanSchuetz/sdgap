@@ -1,5 +1,6 @@
 <section class="section">
   <div class="container is-fluid">
+  <h2 class="is-size-4 is-text-weight-bold">Procurement Notices</h2>
   <table class="table is-widescreen is-bordered is-striped is-fullwidth">
     <thead>
       <tr>
@@ -22,46 +23,16 @@
       </tr>
     </tfoot>
     <tbody>
-      <tr>
-        <th>RFP</th>
-        <td>Event Rapporteur Services</td>
-        <td>BPA-RFP-0002</td>
-        <td>May 7, 2018</td>
-        <td>May 18, 2018</td>
-        <td class="download"><a class="button is-primary"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
-      </tr>
-      <tr>
-        <th>RFP</th>
-        <td>Event Rapporteur Services</td>
-        <td>BPA-RFP-0002</td>
-        <td>May 7, 2018</td>
-        <td>May 18, 2018</td>
-        <td class="download"><a class="button is-primary"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
-      </tr>
-      <tr>
-        <th>RFP</th>
-        <td>Event Rapporteur Services</td>
-        <td>BPA-RFP-0002</td>
-        <td>May 7, 2018</td>
-        <td>May 18, 2018</td>
-        <td class="download"><a class="button is-primary"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
-      </tr>
-      <tr>
-        <th>RFP</th>
-        <td>Event Rapporteur Services</td>
-        <td>BPA-RFP-0002</td>
-        <td>May 7, 2018</td>
-        <td>May 18, 2018</td>
-        <td class="download"><a class="button is-primary"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
-      </tr>
-      <tr>
-        <th>RFP</th>
-        <td>Event Rapporteur Services</td>
-        <td>BPA-RFP-0002</td>
-        <td>May 7, 2018</td>
-        <td>May 18, 2018</td>
-        <td class="download"><a class="button is-primary"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
-      </tr>
+      {% for notice in site.notices %}
+        <tr>
+          <td>{{ notice.Type }}</td>
+          <td>{{ notice.Title }}</td>
+          <td>{{ notice.Reference-Number }}</td>
+          <td>{{ notice.Posted-Date }}</td>
+          <td>{{ notice.Deadline }}</td>
+          <td class="download"><a class="button is-primary" href="{{ notice.File }}"><span class="icon"><i class="fas fa-download"></i></span><span>Download</span></a></td>
+        </tr>
+      {% endfor %}
     </tbody>
   </table>
   </div>

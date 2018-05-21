@@ -2,8 +2,8 @@
 title: SDGAP Procurement
 timezone: America/New_York
 collections:
-  posts:
-    title: Posts
+  notices:
+    title: Notices
     output: true
   uploads:
     title: Uploads
@@ -11,10 +11,15 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: notices
   values:
-    layout: post
-    file: ''
+    Layout: default
+    File: ''
+    Type: 'RFP'
+    Reference-Number:
+    Title:
+    Posted-Date:
+    Deadline:
 date: 2016-10-02 17:11:00.000000000 Z
 url: sdgap-procurement.org
 permalink: "/:title.html"
