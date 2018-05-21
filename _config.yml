@@ -16,7 +16,7 @@ defaults:
     path: ''
     type: notices
   values:
-    Layout: default
+    layout: default
     File: ''
     Type: RFP
     Reference-Number: 
